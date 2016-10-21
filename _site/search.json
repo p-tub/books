@@ -1,0 +1,30 @@
+[
+  
+    {
+      "title"    : "This is just a test",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/jekyll/update/2014/11/02/test.html",
+      "date"     : "2014-11-02 02:07:22 +0600",
+      "desc"     : "You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes."
+    } ,
+  
+    {
+      "title"    : "Welcome to Jekyll!",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/jekyll/update/2014/11/02/welcome-to-jekyll0.html",
+      "date"     : "2014-11-02 02:07:22 +0600",
+      "desc"     : "You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes."
+    } ,
+  
+    {
+      "title"    : "Know What Your Customers Want Before They Do",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/mis-105/2014/11/02/KnowWhatYourCustomersWantBeforeTheyDo.html",
+      "date"     : "2014-11-02 02:07:22 +0600",
+      "desc"     : "Retailers need to target customers with the right deal at the right time. Here’s how to nail the “next best offer.” by Thomas H. Davenport, Leandro Dalle Mule, and John Lucker"
+    } 
+  
+]

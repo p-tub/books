@@ -1,0 +1,34 @@
+---
+layout: default
+---
+
+
+
+
+    <div class="col-lg-4 col-md-2 col-sm-2 col-xs-4">
+      <div class="book-thumbnail">
+          {% if page.img %}
+              <img src="{{ site.url }}{{ page.img }}" class=" img-responsive img-thumbnail" alt="{{ page.title }}">
+          {% endif %}
+          {% if page.imgURL %}
+              <img src="{{ page.imgURL }}" class="img-responsive" style=" height: 300px; float: left;" class="img-thumbnail" alt="{{ page.title }}">
+          {% endif %}
+        </div>
+    </div>
+
+    <div class="col-lg-8 col-md-10 col-sm-10 col-xs-8">
+
+        <div class="info">
+            <h1 class="post-title">{{ page.title }}</h1>
+            <p>{{ page.desc }}</p>
+            {% if page.dwldId %}
+              <a class="btn btn-success" href="https://drive.google.com/uc?export=download&id={{ page.dwldId }}" target="_blank" role="button">download</a>
+            {% endif %}
+
+            {% if page.demo %}
+              <a class="btn btn-info" href="{{ page.demo }}" target="_blank" role="button">View Demo</a>
+            {% endif %}
+
+
+        </div>
+    </div>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>A Sample Blog</title>
+    <meta name="description" content="">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="canonical" href="/">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+</head>
+
+
+  <body>
+
+    
+<header class="" style="    position: relative;width: 100%; padding-top: 15px; margin-bottom: 15px;">
+      <div class="container">
+        <div class="col-lg-4  col-md-12 col-sm-12">
+          <span class="text-muted"><a class="site-title" href="/" style=" font-family: 'Luckiest Guy', cursive; font-size: 30px;" ><i class="fa fa-book" aria-hidden="true"></i> A Sample Blog</a></span>
+        </div>
+        <div class="col-lg-8 col-md-12 col-md-12">
+          <div class="pull-right">
+
+              <a class="site-title" href="/"> Request New Books </a> /
+              <a class="site-title" href="/"> About me</a>
+
+          </div>
+        </div>
+
+      </div>
+</header>
+
+
+
+    <div class="container" >
+    	<div class="row">
+
+                <div class="col-sm-6 col-sm-offset-3">
+            <div id="imaginary_container">
+                <div class="input-group stylish-input-group">
+                    <input type="text" class="form-control" id="search-input" placeholder="Which book are you looking for....... ? " >
+                    <span class="input-group-addon">
+                        <button type="submit">
+                            <i class="fa fa-book" aria-hidden="true"></i>
+                        </button>
+                    </span>
+                </div>
+									<br>
+                <div class="list-group" id="results-container" ></div>
+            </div>
+        </div>
+        <script src="/js/jekyll-search.js" type="text/javascript"></script>
+        <script type="text/javascript">
+          SimpleJekyllSearch({
+            searchInput: document.getElementById('search-input'),
+            resultsContainer: document.getElementById('results-container'),
+            json: '/search.json',
+            searchResultTemplate: '<a href="{url}" class="list-group-item list-group-item-action "><h5 class="list-group-item-heading" style="color:#54a4de;">{title}</h5> <p class="list-group-item-text">{desc}</p></a>',
+            noResultsText: 'No book found on this name',
+            limit: 10,
+            fuzzy: true,
+            exclude: ['Welcome']
+          })
+        </script>
+
+
+      </div>
+    </div>
+
+    <!-- <footer class="footer" style="position: fixed;width: 100%;bottom: 5%;">
+      <div class="container">
+        <span class="text-muted">Place sticky footer content here.</span>
+      </div>
+    </footer> -->
+
+
+
+
+
+
+
+  </body>
+
+</html>
