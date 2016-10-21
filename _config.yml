@@ -1,0 +1,21 @@
+# _config.yml
+title: A Sample Blog # your blog's name
+author: Jesse Herrick # your name
+baseurl: "" # we'll get to this later
+exclude: # things to exclude from the build process
+  - README.md
+  - .ruby-version
+  - Gemfile
+  - Gemfile.lock
+
+... other config ...
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+gems:
+  - jekyll-angular
